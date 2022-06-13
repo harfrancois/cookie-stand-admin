@@ -1,6 +1,9 @@
+import { useAuth } from '../contexts/auth';
+import useResource from '../hooks/useResource';
 
 export default function Form(props) {
-
+    const { user } = useAuth();
+    const { createResource } = useResource();
   return (
     <div className='justify-center relative flex py-6'>
 

@@ -1,6 +1,6 @@
 import { hours } from "../data"
 
-export default function Table({ locations }) {
+export default function Table({ locations, deleteStand }) {
 
   function calculateTotal() {
     let grandTotal = 0;
